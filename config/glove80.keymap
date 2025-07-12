@@ -105,6 +105,16 @@
             bindings = <&kp ESCAPE>;
             key-positions = <41 42>;
         };
+
+        move-window-right {
+            bindings = <&kp LG(LS(RIGHT))>;
+            key-positions = <74 43>;
+        };
+
+        move-window-left {
+            bindings = <&kp LS(LG(LEFT))>;
+            key-positions = <74 40>;
+        };
     };
 
     keymap {
