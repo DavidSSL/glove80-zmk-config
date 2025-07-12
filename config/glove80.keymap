@@ -98,6 +98,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <41 42>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
