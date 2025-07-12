@@ -29,7 +29,7 @@
             label = "LAYER_TAP_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo 2>, <&to 2>;
+            bindings = <&mo 1>, <&to 1>;
         };
 
         magic: magic_hold_tap {
@@ -126,19 +126,8 @@
 &none          &none          &none             &none                 &none                  &none                                                                            &none  &none      &none        &none     &none     &none
 &kp EXCL       &kp LESS_THAN  &kp GREATER_THAN  &kp LBKT              &kp RBKT               &kp HASH                                                                         &none  &none      &none        &none     &none     &none
 &kp AMPERSAND  &kp BACKSLASH  &kp EQUAL         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SLASH                                                                        &none  &kp RCTRL  &kp RSHFT    &kp RALT  &kp LGUI  &none
-&kp CARET      &kp AT         &kp MINUS         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR  &none             &none         &none        &trans  &trans  &trans  &none  &kp TAB    &kp RS(TAB)  &none     &none     &none
+&kp CARET      &kp AT         &kp MINUS         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR  &none             &none         &to 0        &trans  &trans  &trans  &none  &kp TAB    &kp RS(TAB)  &none     &none     &none
 &none          &none          &none             &none                 &none                              &kp SINGLE_QUOTE  &kp ASTERISK  &kp PERCENT  &trans  &trans  &trans         &none      &none        &none     &none     &none
-            >;
-        };
-
-        symbol_layer {
-            bindings = <
-&none      &none           &none                 &none                  &none                                                                                                      &none                 &none             &none              &none                  &none
-&none      &kp GRAVE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI          &kp COMMA                                                                  &none         &none                 &none             &none              &none                  &none
-&kp EXCL   &kp LEFT_BRACE  &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES      &kp RIGHT_BRACE   &kp QUESTION                                                               &kp SEMI      &kp RIGHT_SHIFT       &kp RCTRL         &kp RIGHT_ALT      &kp RGUI               &none
-&kp HASH   &kp CARET       &kp EQUAL             &kp UNDER              &kp DOLLAR        &kp ASTRK                                                                  &kp PERIOD    &kp BACKSPACE         &kp TAB           &kp SPACE          &kp RETURN             &none
-&kp TILDE  &kp LESS_THAN   &kp PIPE              &kp KP_MINUS           &kp GREATER_THAN  &kp SLASH     &kp BACKSLASH  &kp PERIOD  &kp STAR  &trans  &trans  &trans  &kp KP_SLASH  &kp DELETE            &kp RS(TAB)       &none              &none                  &none
-&kp AT     &kp AMPERSAND   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS                        &kp PERCENT    &kp COLON   &kp SEMI  &trans  &trans  &trans                &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &none
             >;
         };
 
@@ -150,6 +139,17 @@
 &none         &none         &kp LEFT    &kp DOWN    &kp RIGHT  &kp PG_UP                                            &kp PRCNT  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &none
 &none         &kp K_CMENU   &none       &kp F11     &kp F12    &kp PG_DN  &none  &none  &to 0  &none  &none  &none  &kp COMMA  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &none
 &none         &kp CAPS      &kp INS     &kp F11     &kp F12               &none  &none  &none  &none  &none  &none             &kp KP_N0   &kp KP_N0     &kp KP_DOT     &kp KP_ENTER     &none
+            >;
+        };
+
+        symbol_layer {
+            bindings = <
+&none      &none           &none                 &none                  &none                                                                                                      &none                 &none             &none              &none                  &none
+&none      &kp GRAVE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI          &kp COMMA                                                                  &none         &none                 &none             &none              &none                  &none
+&kp EXCL   &kp LEFT_BRACE  &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES      &kp RIGHT_BRACE   &kp QUESTION                                                               &kp SEMI      &kp RIGHT_SHIFT       &kp RCTRL         &kp RIGHT_ALT      &kp RGUI               &none
+&kp HASH   &kp CARET       &kp EQUAL             &kp UNDER              &kp DOLLAR        &kp ASTRK                                                                  &kp PERIOD    &kp BACKSPACE         &kp TAB           &kp SPACE          &kp RETURN             &none
+&kp TILDE  &kp LESS_THAN   &kp PIPE              &kp KP_MINUS           &kp GREATER_THAN  &kp SLASH     &kp BACKSLASH  &kp PERIOD  &kp STAR  &trans  &trans  &trans  &kp KP_SLASH  &kp DELETE            &kp RS(TAB)       &none              &none                  &none
+&kp AT     &kp AMPERSAND   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS                        &kp PERCENT    &kp COLON   &kp SEMI  &none   &trans  &trans                &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &none
             >;
         };
 
