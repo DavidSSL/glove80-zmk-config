@@ -116,10 +116,10 @@
         symbol_layer {
             bindings = <
 &none      &none           &none                 &none                  &none                                                                                                      &none                 &none             &none              &none                  &none
-&none      &kp GRAVE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI          &kp KP_COMMA                                                               &none         &none                 &none             &none              &none                  &none
+&none      &kp GRAVE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI          &kp COMMA                                                                  &none         &none                 &none             &none              &none                  &none
 &kp EXCL   &kp LEFT_BRACE  &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES      &kp RIGHT_BRACE   &kp QUESTION                                                               &kp SEMI      &kp RIGHT_SHIFT       &kp RCTRL         &kp RIGHT_ALT      &kp RGUI               &none
-&kp HASH   &kp CARET       &kp KP_EQUAL          &kp UNDER              &kp DOLLAR        &kp ASTRK                                                                  &kp PERIOD    &kp BACKSPACE         &kp TAB           &kp SPACE          &kp RETURN             &none
-&kp TILDE  &kp LESS_THAN   &kp PIPE              &kp KP_MINUS           &kp GREATER_THAN  &kp SLASH     &kp BACKSLASH  &kp KP_DOT  &kp STAR  &trans  &trans  &trans  &kp KP_SLASH  &kp DELETE            &kp RS(TAB)       &none              &none                  &none
+&kp HASH   &kp CARET       &kp EQUAL             &kp UNDER              &kp DOLLAR        &kp ASTRK                                                                  &kp PERIOD    &kp BACKSPACE         &kp TAB           &kp SPACE          &kp RETURN             &none
+&kp TILDE  &kp LESS_THAN   &kp PIPE              &kp KP_MINUS           &kp GREATER_THAN  &kp SLASH     &kp BACKSLASH  &kp PERIOD  &kp STAR  &trans  &trans  &trans  &kp KP_SLASH  &kp DELETE            &kp RS(TAB)       &none              &none                  &none
 &kp AT     &kp AMPERSAND   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS                        &kp PERCENT    &kp COLON   &kp SEMI  &trans  &trans  &trans                &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &none
             >;
         };
