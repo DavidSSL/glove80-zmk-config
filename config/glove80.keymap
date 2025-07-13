@@ -90,11 +90,11 @@
             bindings = <&out OUT_BLE &bt BT_SEL 3>;
         };
 
-        euro_sign: euro_sign {
+        forward_pipe: forward_pipe {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
-            label = "EURO_SIGN";
+            bindings = <&none &kp PIPE &kp GT>;
+            label = "FORWARD_PIPE";
         };
     };
 
@@ -141,12 +141,12 @@
 
         programmer {
             bindings = <
-&none          &none          &none             &none                 &none                                                                                                           &none        &none             &none     &none     &none
-&none          &none          &none             &none                 &none                  &none                                                                             &none  &none        &none             &none     &none     &none
-&kp EXCL       &kp LESS_THAN  &kp GREATER_THAN  &kp LBKT              &kp RBKT               &kp HASH                                                                          &none  &none        &kp SINGLE_QUOTE  &none     &none     &none
-&kp AMPERSAND  &kp BACKSLASH  &kp EQUAL         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SLASH                                                                         &none  &kp RCTRL    &kp RSHFT         &kp RALT  &kp LGUI  &none
-&kp CARET      &kp AT         &kp MINUS         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR  &none              &none         &to 0        &trans  &trans  &trans  &none  &kp RS(TAB)  &kp TAB           &none     &none     &none
-&none          &none          &none             &none                 &none                              &kp DOUBLE_QUOTES  &kp ASTERISK  &kp PERCENT  &trans  &trans  &trans         &none        &none             &none     &none     &none
+&none          &none          &none             &none                 &none                                                                                                                   &none        &none             &none     &none     &none
+&none          &none          &none             &none                 &none                  &none                                                                                  &none     &none        &none             &none     &none     &none
+&kp CARET      &kp LESS_THAN  &kp GREATER_THAN  &kp LBKT              &kp RBKT               &kp DOLLAR                                                                             &none     &none        &kp SINGLE_QUOTE  &none     &none     &none
+&kp AMPERSAND  &kp BACKSLASH  &kp EQUAL         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SLASH                                                                              &kp HASH  &kp RCTRL    &kp RSHFT         &kp RALT  &kp LGUI  &none
+&forward_pipe  &kp AT         &kp MINUS         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EXCLAMATION  &none              &none         &to 0        &trans  &trans  &trans  &none     &kp RS(TAB)  &kp TAB           &none     &none     &none
+&none          &none          &none             &none                 &none                                   &kp DOUBLE_QUOTES  &kp ASTERISK  &kp PERCENT  &trans  &trans  &trans            &none        &none             &none     &none     &none
             >;
         };
 
