@@ -162,12 +162,12 @@
 
         programmer {
             bindings = <
-&none          &none          &none             &none                 &none                                                                                                                              &none               &none           &none         &none     &none
-&none          &none          &none             &none                 &none                  &none                                                                                      &none            &none               &none           &none         &none     &none
-&kp CARET      &kp LESS_THAN  &kp GREATER_THAN  &kp LBKT              &kp RBKT               &kp DOLLAR                                                                                 &kp INSERT       &backward_pipe      &forward_pipe   &kp ASTERISK  &none     &none
-&kp AMPERSAND  &kp BACKSLASH  &kp EQUAL         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SLASH                                                                                  &kp HASH         &kp RCTRL           &kp RSHFT       &kp RALT      &kp LGUI  &none
-&forward_pipe  &kp AT         &kp MINUS         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EXCLAMATION  &none              &none             &to 0        &trans  &trans  &trans  &kp PRINTSCREEN  &fsharp_assignment  &forward_arrow  &none         &none     &none
-&none          &none          &none             &none                 &kp SPACE                               &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp PERCENT  &trans  &trans  &trans                   &none               &none           &none         &none     &none
+&none          &none             &none              &none                 &none                                                                                                                              &none               &none           &none         &none     &none
+&none          &none             &none              &none                 &none                  &none                                                                                      &none            &none               &none           &none         &none     &none
+&kp CARET      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LESS_THAN         &kp GREATER_THAN       &kp DOLLAR                                                                                 &kp INSERT       &backward_pipe      &forward_pipe   &kp ASTERISK  &none     &none
+&kp AMPERSAND  &kp BACKSLASH     &kp EQUAL          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SLASH                                                                                  &kp HASH         &kp RCTRL           &kp RSHFT       &kp RALT      &kp LGUI  &none
+&forward_pipe  &kp AT            &kp MINUS          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EXCLAMATION  &none              &none             &to 0        &trans  &trans  &trans  &kp PRINTSCREEN  &fsharp_assignment  &forward_arrow  &none         &none     &none
+&none          &none             &none              &none                 &kp SPACE                               &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp PERCENT  &trans  &trans  &trans                   &none               &none           &none         &none     &none
             >;
         };
 
