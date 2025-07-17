@@ -77,19 +77,19 @@
             flavor = "tap-preferred";
         };
 
-        key_td: key_td {
+        j_td: j_td {
             compatible = "zmk,behavior-tap-dance";
-            label = "KEY_TD";
+            label = "J_TD";
             #binding-cells = <0>;
             bindings = <&kp J>, <&kp ESC>;
 
             tapping-term-ms = <220>;
         };
 
-        key_htd: key_htd {
+        j_htd: j_htd {
             compatible = "zmk,behavior-hold-tap";
-            label = "KEY_HTD";
-            bindings = <&kp>, <&key_td>;
+            label = "J_HTD";
+            bindings = <&kp>, <&j_td>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -186,12 +186,12 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-&kp F1      &kp F2      &kp F3          &kp F4                               &kp F5                                                                                                                                   &kp F6            &kp F7                         &kp F8      &kp F9              &kp F10
-&kp EQUAL   &kp N1      &kp N2          &kp N3                               &kp N4       &kp N5                                                                                                   &kp N6             &kp N7            &kp N8                         &kp N9      &kp N0              &kp MINUS
-&kp TAB     &kp Q       &kp W           &kp E                                &kp R        &kp T                                                                                                    &kp Y              &ht LS(F12) U     &ht_longer_time_to_hold F12 I  &kp O       &kp P               &kp BSLH
-&kp ESC     &ht LGUI A  &ht LEFT_ALT S  &hmr_fast_typing LSHIFT D            &ht LCTRL F  &ht RA(END) G                                                                                            &ht LS(LC(F12)) H  &key_htd RCTRL 0  &hmr_fast_typing RSHIFT K      &ht RALT L  &ht RGUI SEMICOLON  &kp SQT
-&kp GRAVE   &kp Z       &kp X           &ht_longer_time_to_hold LA(LC(C)) C  &kp V        &ht_longer_time_to_hold LS(LC(B)) B  &kp LSHFT   &kp LCTRL  &layer_td  &kp LGUI  &kp RCTRL  &kp RSHFT    &kp N              &kp M             &kp COMMA                      &kp DOT     &kp FSLH            &kp PG_UP
-&magic 6 0  &kp HOME    &kp END         &kp LEFT                             &kp RIGHT                                         &lt 2 BSPC  &kp DEL    &kp LALT   &kp RALT  &kp RET    &lt 1 SPACE                     &kp UP            &kp DOWN                       &kp LBKT    &kp RBKT            &kp PG_DN
+&kp F1      &kp F2      &kp F3          &kp F4                               &kp F5                                                                                                                                   &kp F6          &kp F7                         &kp F8      &kp F9              &kp F10
+&kp EQUAL   &kp N1      &kp N2          &kp N3                               &kp N4       &kp N5                                                                                                   &kp N6             &kp N7          &kp N8                         &kp N9      &kp N0              &kp MINUS
+&kp TAB     &kp Q       &kp W           &kp E                                &kp R        &kp T                                                                                                    &kp Y              &ht LS(F12) U   &ht_longer_time_to_hold F12 I  &kp O       &kp P               &kp BSLH
+&kp ESC     &ht LGUI A  &ht LEFT_ALT S  &hmr_fast_typing LSHIFT D            &ht LCTRL F  &ht RA(END) G                                                                                            &ht LS(LC(F12)) H  &j_htd RCTRL 0  &hmr_fast_typing RSHIFT K      &ht RALT L  &ht RGUI SEMICOLON  &kp SQT
+&kp GRAVE   &kp Z       &kp X           &ht_longer_time_to_hold LA(LC(C)) C  &kp V        &ht_longer_time_to_hold LS(LC(B)) B  &kp LSHFT   &kp LCTRL  &layer_td  &kp LGUI  &kp RCTRL  &kp RSHFT    &kp N              &kp M           &kp COMMA                      &kp DOT     &kp FSLH            &kp PG_UP
+&magic 6 0  &kp HOME    &kp END         &kp LEFT                             &kp RIGHT                                         &lt 2 BSPC  &kp DEL    &kp LALT   &kp RALT  &kp RET    &lt 1 SPACE                     &kp UP          &kp DOWN                       &kp LBKT    &kp RBKT            &kp PG_DN
             >;
         };
 
