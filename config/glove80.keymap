@@ -59,10 +59,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <180>;
             quick-tap-ms = <200>;
             require-prior-idle-ms = <150>;
-            flavor = "tap-unless-interrupted";
+            flavor = "tap-preferred";
         };
 
         ht_longer_time_to_hold: ht_longer_time_to_hold {
@@ -150,24 +150,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <41 43>;
-        };
-
-        move-window-right {
-            bindings = <&kp LG(LS(RIGHT))>;
-            key-positions = <43 35>;
-        };
-
-        move-window-left {
-            bindings = <&kp LS(LG(LEFT))>;
-            key-positions = <40 35>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
