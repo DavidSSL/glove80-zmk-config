@@ -29,7 +29,7 @@
             label = "LAYER_TAP_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo 1>, <&to 1>;
+            bindings = <&mo 3>, <&to 3>;
         };
 
         magic: magic_hold_tap {
@@ -186,12 +186,12 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-&kp F1      &kp F2      &kp F3          &kp F4                               &kp F5                                                                                                                                   &kp F6          &kp F7                         &kp F8      &kp F9              &kp F10
-&kp EQUAL   &kp N1      &kp N2          &kp N3                               &kp N4       &kp N5                                                                                                   &kp N6             &kp N7          &kp N8                         &kp N9      &kp N0              &kp MINUS
-&kp TAB     &kp Q       &kp W           &kp E                                &kp R        &kp T                                                                                                    &kp Y              &ht LS(F12) U   &ht_longer_time_to_hold F12 I  &kp O       &kp P               &kp BSLH
-&kp ESC     &ht LGUI A  &ht LEFT_ALT S  &hmr_fast_typing LSHIFT D            &ht LCTRL F  &ht RA(END) G                                                                                            &ht LS(LC(F12)) H  &j_htd RCTRL 0  &hmr_fast_typing RSHIFT K      &ht RALT L  &ht RGUI SEMICOLON  &kp SQT
-&kp GRAVE   &kp Z       &kp X           &ht_longer_time_to_hold LA(LC(C)) C  &kp V        &ht_longer_time_to_hold LS(LC(B)) B  &kp LSHFT   &kp LCTRL  &layer_td  &kp LGUI  &kp RCTRL  &kp RSHFT    &kp N              &kp M           &kp COMMA                      &kp DOT     &kp FSLH            &kp PG_UP
-&magic 6 0  &kp HOME    &kp END         &kp LEFT                             &kp RIGHT                                         &lt 2 BSPC  &kp DEL    &kp LALT   &kp RALT  &kp RET    &lt 1 SPACE                     &kp UP          &kp DOWN                       &kp LBKT    &kp RBKT            &kp PG_DN
+&kp F1      &kp F2      &kp F3          &kp F4                     &kp F5                                                                                           &kp F6          &kp F7                     &kp F8      &kp F9              &kp F10
+&kp EQUAL   &kp N1      &kp N2          &kp N3                     &kp N4       &kp N5                                                                      &kp N6  &kp N7          &kp N8                     &kp N9      &kp N0              &kp MINUS
+&kp TAB     &kp Q       &kp W           &kp E                      &kp R        &kp T                                                                       &kp Y   &kp U           &kp I                      &kp O       &kp P               &kp BSLH
+&kp ESC     &ht LGUI A  &ht LEFT_ALT S  &hmr_fast_typing LSHIFT D  &ht LCTRL F  &kp G                                                                       &kp H   &j_htd RCTRL 0  &hmr_fast_typing RSHIFT K  &ht RALT L  &ht RGUI SEMICOLON  &kp SQT
+&kp GRAVE   &kp Z       &kp X           &kp C                      &kp V        &kp B   &kp LSHFT   &kp LCTRL  &layer_td  &kp LGUI  &kp RCTRL  &kp RSHFT    &kp N   &kp M           &kp COMMA                  &kp DOT     &kp FSLH            &kp PG_UP
+&magic 6 0  &kp HOME    &kp END         &kp LEFT                   &kp RIGHT            &lt 2 BSPC  &kp DEL    &kp LALT   &kp RALT  &kp RET    &lt 1 SPACE          &kp UP          &kp DOWN                   &kp LBKT    &kp RBKT            &kp PG_DN
             >;
         };
 
@@ -219,12 +219,12 @@
 
         rider_layer {
             bindings = <
-&kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV  &kp C_NEXT  &kp C_PP                                                                   &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP   &none            &kp PAUSE_BREAK
-&none         &none         &none       &none       &none      &kp HOME                                             &kp LPAR   &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp PSCRN
-&none         &none         &none       &kp UP      &none      &kp END                                              &kp RPAR   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp SLCK
-&none         &none         &kp LEFT    &kp DOWN    &kp RIGHT  &kp PG_UP                                            &kp PRCNT  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &none
-&none         &kp K_CMENU   &none       &kp F11     &kp F12    &kp PG_DN  &none  &none  &to 0  &none  &none  &none  &kp COMMA  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &none
-&none         &kp CAPS      &kp INS     &kp F11     &kp F12               &none  &none  &none  &none  &none  &none             &kp KP_N0   &kp KP_N0     &kp KP_DOT     &kp KP_ENTER     &none
+&none  &none          &none          &none           &none                                                                                       &none        &none          &none          &none  &none
+&none  &none          &none          &none           &none          &none                                                       &none            &none        &none          &none          &none  &none
+&none  &none          &none          &none           &kp RA(RC(Z))  &kp LC(T)                                                   &none            &kp LS(F12)  &kp F12        &none          &none  &none
+&none  &kp RC(RA(A))  &kp LEFT_ALT   &kp LEFT_SHIFT  &kp LCTRL      &kp RA(END)                                                 &kp LS(LC(F12))  &none        &kp LA(LC(K))  &kp LS(LA(L))  &none  &none
+&none  &none          &kp LA(LC(C))  &none           &none          &kp LS(LC(B))  &none  &none  &to 0  &trans  &trans  &trans  &kp F7           &none        &none          &none          &none  &none
+&none  &none          &none          &none           &none                         &none  &none  &none  &trans  &trans  &trans                   &none        &none          &none          &none  &none
             >;
         };
 
