@@ -138,7 +138,7 @@
         forward_pipe: forward_pipe {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SPACE &kp PIPE &kp GT &kp SPACE>;
+            bindings = <&kp PIPE &kp GT &kp SPACE>;
             label = "FORWARD_PIPE";
         };
 
