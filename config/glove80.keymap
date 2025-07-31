@@ -219,12 +219,12 @@
 
         rider_layer {
             bindings = <
-&none       &none          &none          &none           &none                                                                                       &none        &none          &none          &none  &none
-&none       &none          &none          &none           &none          &none                                                       &none            &none        &none          &none          &none  &none
-&none       &none          &none          &none           &kp RA(RC(Z))  &kp LC(T)                                                   &none            &kp LS(F12)  &kp F12        &none          &none  &none
-&none       &kp RC(RA(A))  &kp LEFT_ALT   &kp LEFT_SHIFT  &kp LCTRL      &kp RA(END)                                                 &kp LS(LC(F12))  &none        &kp LA(LC(K))  &kp LS(LA(L))  &none  &none
-&none       &none          &kp RA(RC(C))  &none           &none          &kp LS(LC(B))  &none  &none  &none  &to 0   &trans  &trans  &kp F7           &none        &none          &none          &none  &none
-&magic 6 0  &none          &none          &none           &none                         &none  &none  &none  &trans  &trans  &trans                   &none        &none          &none          &none  &none
+&none       &none          &none         &none           &none                                                                                       &none        &none          &none          &none  &none
+&none       &none          &none         &none           &none          &none                                                       &none            &none        &none          &none          &none  &none
+&none       &none          &none         &none           &kp RA(RC(Z))  &kp LC(T)                                                   &none            &kp LS(F12)  &kp F12        &none          &none  &none
+&none       &kp RC(RA(A))  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL      &kp RA(END)                                                 &kp LS(LC(F12))  &none        &kp LA(LC(K))  &kp LS(LA(L))  &none  &none
+&none       &none          &none         &kp RA(RC(C))   &none          &kp LS(LC(B))  &none  &none  &none  &to 0   &trans  &trans  &kp F7           &none        &none          &none          &none  &none
+&magic 6 0  &none          &none         &none           &none                         &none  &none  &none  &trans  &trans  &trans                   &none        &none          &none          &none  &none
             >;
         };
 
