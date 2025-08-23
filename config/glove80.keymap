@@ -97,6 +97,15 @@
             quick-tap-ms = <200>;
             require-prior-idle-ms = <200>;
         };
+
+        i_td: i_td {
+            compatible = "zmk,behavior-tap-dance";
+            label = "I_TD";
+            #binding-cells = <0>;
+            bindings = <&kp I>, <&kp ESC>;
+
+            tapping-term-ms = <220>;
+        };
     };
 
     macros {
@@ -186,12 +195,12 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-&kp F1      &kp F2      &kp F3          &kp F4                     &kp F5                                                                                           &kp F6          &kp F7                     &kp F8      &kp F9              &kp F10
-&kp EQUAL   &kp N1      &kp N2          &kp N3                     &kp N4       &kp N5                                                                      &kp N6  &kp N7          &kp N8                     &kp N9      &kp N0              &kp MINUS
-&kp TAB     &kp Q       &kp W           &kp E                      &kp R        &kp T                                                                       &kp Y   &kp U           &kp I                      &kp O       &kp P               &kp BSLH
-&kp ESC     &ht LGUI A  &ht LEFT_ALT S  &hmr_fast_typing LSHIFT D  &ht LCTRL F  &kp G                                                                       &kp H   &j_htd RCTRL 0  &hmr_fast_typing RSHIFT K  &ht RALT L  &ht RGUI SEMICOLON  &kp SQT
-&kp GRAVE   &kp Z       &kp X           &kp C                      &kp V        &kp B   &kp LSHFT   &kp LCTRL  &layer_td  &to 3     &kp RCTRL  &kp RSHFT    &kp N   &kp M           &kp COMMA                  &kp DOT     &kp FSLH            &kp PG_UP
-&magic 6 0  &kp HOME    &kp END         &kp LEFT                   &kp RIGHT            &lt 2 BSPC  &kp DEL    &kp LALT   &kp RALT  &kp RET    &lt 1 SPACE          &kp UP          &kp DOWN                   &kp LBKT    &kp RBKT            &kp PG_DN
+&kp F1      &kp F2      &kp F3          &kp F4                     &kp F5                                                                                           &kp F6       &kp F7                     &kp F8      &kp F9              &kp F10
+&kp EQUAL   &kp N1      &kp N2          &kp N3                     &kp N4       &kp N5                                                                      &kp N6  &kp N7       &kp N8                     &kp N9      &kp N0              &kp MINUS
+&kp TAB     &kp Q       &kp W           &kp E                      &kp R        &kp T                                                                       &kp Y   &kp U        &i_td                      &kp O       &kp P               &kp BSLH
+&kp ESC     &ht LGUI A  &ht LEFT_ALT S  &hmr_fast_typing LSHIFT D  &ht LCTRL F  &kp G                                                                       &kp H   &ht RCTRL J  &hmr_fast_typing RSHIFT K  &ht RALT L  &ht RGUI SEMICOLON  &kp SQT
+&kp GRAVE   &kp Z       &kp X           &kp C                      &kp V        &kp B   &kp LSHFT   &kp LCTRL  &layer_td  &to 3     &kp RCTRL  &kp RSHFT    &kp N   &kp M        &kp COMMA                  &kp DOT     &kp FSLH            &kp PG_UP
+&magic 6 0  &kp HOME    &kp END         &kp LEFT                   &kp RIGHT            &lt 2 BSPC  &kp DEL    &kp LALT   &kp RALT  &kp RET    &lt 1 SPACE          &kp UP       &kp DOWN                   &kp LBKT    &kp RBKT            &kp PG_DN
             >;
         };
 
