@@ -219,7 +219,7 @@
             bindings = <
 &none  &none     &none         &none           &none                                                                          &none           &none         &none            &none  &none
 &none  &none     &none         &none           &none      &none                                               &none           &none           &none         &none            &none  &none
-&none  &none     &none         &none           &none      &none                                               &kp LS(TAB)     &kp END         &kp HOME      &kp TAB          &none  &none
+&none  &none     &none         &none           &none      &none                                               &kp LS(TAB)     &kp HOME        &kp END       &kp TAB          &none  &none
 &none  &kp LGUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &none                                               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none  &none
 &none  &none     &none         &none           &none      &none  &none  &none  &none  &trans  &trans  &trans  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &none  &none
 &none  &none     &none         &none           &none             &none  &none  &none  &trans  &trans  &trans                  &kp BSPC        &none         &none            &none  &none
